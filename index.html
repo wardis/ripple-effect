@@ -5,8 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Ripple Effect Landing</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.0.1/dist/gsap.min.js"></script>
 </head>
 <body>
+  <ion-icon id="logo" name="heart"></ion-icon>
   <script src="./pixi.min.js"></script>
   <script type="text/javascript">
     let type = "WebGL"
@@ -14,6 +17,8 @@
       type = "canvas"
     }
     PIXI.utils.sayHello(type)
+    gsap.to("#logo", { duration: 1, x: 100 });
   </script>
+  <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
 </body>
 </html>
