@@ -23,7 +23,9 @@
     </div>
 
     <div class="header">
-      <h1><span>Water<br></span>Life</h1>
+      <h1>
+        <span>Water<br /></span>Life
+      </h1>
     </div>
 
     <div class="media">
@@ -123,6 +125,34 @@
       };
 
       setup();
+
+      // Greesock to reveal elements
+      const tl = gsap.timeline({
+        defaults: {
+          duration: 2,
+          opacity: 0,
+          ease: Expo.easeOut
+        }
+      });
+
+      tl.from(".brand", { y: 20 });
+      tl.from(".search", { y: 20 }, 0.2);
+      tl.from(".menu", { y: 20 }, 0.2);
+      tl.from(".header h1", { x: 30 }, 1);
+      tl.from(
+        ".media ul li",
+        {
+          x: 40,
+          y: 0,
+          stagger: 0.2
+        },
+        0.4
+      );
+      tl.from(".bottomnav", { y: 50, duration: 3 }, 2);
+      tl.from(".counter", { y: 40 }, 3);
+      tl.from(".bar", { y: 40, width: 0 }, 3.6);
+      tl.from(".share", { y: 40 }, 1.4);
+
     </script>
   </body>
 </html>
