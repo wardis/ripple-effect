@@ -1,2 +1,2 @@
-# ripple-effect
-Ripple effect landing page
+# Ripple Effect Landing Concept
+Ripple effect landing page concept using PixiJS & GSAP 3
